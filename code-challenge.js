@@ -21,7 +21,13 @@ const isThatMichaelJordan = (name) => {
 };
 
 const areYouM = (name) => {
-  // insert code
+  
+  if(name.charAt(0) === "m" || name.charAt(0) === "M"){
+    return(true)
+  }
+  else{
+    return(false)
+  }
 };
 
 const mostViewsThreeSneakers = (sneakerOneViews, sneakerTwoViews, sneakerThreeViews) => {
