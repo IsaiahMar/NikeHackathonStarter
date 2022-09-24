@@ -7,7 +7,11 @@ const newSneakers = (sneakers) => {
 };
 
 const isThatMichaelJordan = (name) => {
-  // insert code
+  let jordan = "Micheal Jordan"
+  if(jordan == name){
+    return(true)
+  }
+  return(false)
 };
 
 const areYouM = (name) => {
