@@ -7,11 +7,17 @@ const newSneakers = (sneakers) => {
 };
 
 const isThatMichaelJordan = (name) => {
-  let jordan = "Micheal Jordan"
-  if(jordan == name){
+  /*This ignores CaSiNg issues :)*/ 
+  let jordan = "michael jordan"
+  if(jordan === name.toLowerCase()){
     return(true)
   }
+  else{
   return(false)
+}
+  /*Better way of doing this is just returning the following
+  return(jordan === name.toLowerCase())
+  */
 };
 
 const areYouM = (name) => {
