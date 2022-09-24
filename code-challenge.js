@@ -31,20 +31,21 @@ const areYouM = (name) => {
 };
 
 const mostViewsThreeSneakers = (sneakerOneViews, sneakerTwoViews, sneakerThreeViews) => {
-  let arr = [];
-  arr.push(sneakerOneViews);
-  arr.push(sneakerTwoViews);
-  arr.push(sneakerThreeViews);
-  return(Math.max(arr));
-
+  return(Math.max(sneakerOneViews, sneakerTwoViews, sneakerThreeViews));
 };
 
 const mostViews = (sneakerViews) => {
-  // insert code
+  return(Math.max(...sneakerViews));
 };
 
 const validateEmail = (email) => {
-  // insert code
+  let hasValidEnding = false;
+  let listOfValidEndings = [".com", ".edu", ".net", ".org", ".gov"]
+  for (let i = 0; i < listOfValidEndings.length(); i++) {
+    if (email.substring(email.length() - 4, email.length()) = listOfValidEndings[i]) {
+      let hasValidEnding = true;
+    }
+  }
 };
 
 const validateEmailWithError = (email) => {
