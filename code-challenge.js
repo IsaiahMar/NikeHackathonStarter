@@ -31,7 +31,12 @@ const areYouM = (name) => {
 };
 
 const mostViewsThreeSneakers = (sneakerOneViews, sneakerTwoViews, sneakerThreeViews) => {
-  // insert code
+  let arr = [];
+  arr.push(sneakerOneViews);
+  arr.push(sneakerTwoViews);
+  arr.push(sneakerThreeViews);
+  return(Math.max(arr));
+
 };
 
 const mostViews = (sneakerViews) => {
